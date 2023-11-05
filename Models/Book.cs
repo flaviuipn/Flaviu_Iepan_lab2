@@ -11,6 +11,9 @@ namespace Flaviu_Iepan_lab2.Models
         [Display(Name = "Book Title:")]
         public string Title { get; set; }
 
+        [Display(Name = "Author:")]
+        public string theAuthor {  get; set; }
+
         [Column(TypeName = "decimal(6, 2)")]
 
 
@@ -26,5 +29,7 @@ namespace Flaviu_Iepan_lab2.Models
 
         public int? AuthorID{ get; set; }
         public Author? Author { get; set; }
+        [Display(Name = "Book Categories:")]
+        public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }
