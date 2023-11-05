@@ -11,9 +11,6 @@ namespace Flaviu_Iepan_lab2.Models
         [Display(Name = "Book Title:")]
         public string Title { get; set; }
 
-        [Display(Name = "Author:")]
-        public string theAuthor {  get; set; }
-
         [Column(TypeName = "decimal(6, 2)")]
 
 
