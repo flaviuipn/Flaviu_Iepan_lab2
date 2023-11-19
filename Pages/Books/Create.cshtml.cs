@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Flaviu_Iepan_lab2.Data;
 using Flaviu_Iepan_lab2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Flaviu_Iepan_lab2.Pages.Books
 {
+    [Authorize(Roles = "Admin")]
+
     public class CreateModel : BookCategoriesPageModel
     {
         private readonly Flaviu_Iepan_lab2.Data.Flaviu_Iepan_lab2Context _context;

@@ -12,6 +12,7 @@ namespace Flaviu_Iepan_lab2.Models
         public string Title { get; set; }
 
         [Column(TypeName = "decimal(6, 2)")]
+        [Range(0.01, 500)]
 
 
         [Display(Name = "Price:")]
